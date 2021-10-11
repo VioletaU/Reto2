@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/misFunciones.js">
+    </script>
+</head>
+
+<body>
+    <h2>Reservación de cabañas</h2>
+    <div class="contenedor">
+        <h4>Clientes</h4>
+        <div class="contenedor-inputs">
+            <div>
+                <label for="idCliente">Id cliente</label><br />
+                <input type="number" name="idCliente" id="idCliente">
+            </div>
+            <div>
+                <label for="name">Nombre</label><br />
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="email">Correo electronico</label><br />
+                <input type="text" name="email" id="email">
+            </div>
+            <div>
+                <label for="age">Edad</label><br />
+                <input type="number" name="age" id="age">
+            </div>
+            <span id="resultadoCliente"></span>
+        </div>
+        <div class="contenedor-botones">
+            <button type="button" onclick='consultarCliente()'>Consultar Clientes</button>
+            <button type="button" onclick='cargarCliente()'>Consultar Cliente</button>
+            <button type="button" onclick='actualizarCliente()'>Actualizar Cliente</button>
+            <button type="button" onclick='agregarCliente()'>Agregar Cliente</button>
+        </div>
+    </div>
+    <div class="contenedor">
+        <h4>Cabañas</h4>
+        <div class="contenedor-inputs">
+            <div>
+                <label for="idCabin">Id Cabaña</label><br />
+                <input type="number" name="idCabin" id="idCabin">
+            </div>
+            <div>
+                <label for="brand">Marca</label><br />
+                <input type="text" name="brand" id="brand">
+            </div>
+            <div>
+                <label for="rooms">Habitaciones</label><br />
+                <input type="text" name="rooms" id="rooms">
+            </div>
+            <div>
+                <label for="category_id">Categoria id</label><br />
+                <input type="number" name="category_id" id="category_id">
+            </div>
+            <div>
+                <label for="name1">Nombre</label><br />
+                <input type="text" name="name1" id="name1">
+            </div>
+            <span id="resultadoCabin"></span>
+        </div>
+        <div class="contenedor-botones">
+            <button type="button" onclick='consultarCabin()'>Consultar Cabañas</button>
+            <button type="button" onclick='cargarCabin()'>Consultar Cabaña</button>
+            <button type="button" onclick='actualizarCabin()'>Actualizar Cabaña</button>
+            <button type="button" onclick='agregarCabin()'>Agregar Cabaña</button>
+        </div>
+    </div>
+    <div class="contenedor">
+        <h4>Mensajes</h4>
+        <div class="contenedor-inputs">
+            <div>
+                <label for="idMensaje">Id Mensaje</label><br />
+                <input type="number" name="idMensaje" id="idMensaje">
+            </div>
+            <div>
+                <label for="messagetext">Mensaje</label><br />
+                <input type="text" name="messagetext" id="messagetext">
+            </div>
+            <span id="resultadoMensaje"></span>
+        </div>
+        <div class="contenedor-botones">
+            <button type="button" onclick='consultarMensaje()'>Consultar Mensajes</button>
+            <button type="button" onclick='cargarMensaje()'>Consultar Mensaje</button>
+            <button type="button" onclick='actualizarMensaje()'>Actualizar Mensaje</button>
+            <button type="button" onclick='agregarMensaje()'>Agregar Mensaje</button>
+        </div>
+    </div>
+</body>
+
+</html>

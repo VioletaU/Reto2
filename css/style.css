@@ -1,0 +1,26 @@
+.contenedor {
+    background: rgb(208, 201, 237);
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.contenedor-botones,
+.contenedor-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 5px;
+    margin-bottom: 5px;
+}
+
+input {
+    flex: 1;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+}
